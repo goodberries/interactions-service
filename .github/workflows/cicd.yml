@@ -29,7 +29,7 @@ jobs:
         context: ./interactions-service
         file: ./interactions-service/Dockerfile
         push: true
-        tags: your-repo/interactions-service:${{ github.sha }}
+        tags: yashwanthydg/interactions-service:${{ github.sha }}
         # Example: goodberries/interactions-service:${{ github.sha }}
 
     - name: Deploy to Kubernetes

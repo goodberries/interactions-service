@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: interactions-service
-        image: your-repo/interactions-service:latest # Replace with your image
+        image: yashwanthydg/interactions-service:v1 # Replace with your image
         ports:
         - containerPort: 8003
         env:
@@ -34,7 +34,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: db-secret
-              key: database_url
+              key: DATABASE_URL
         readinessProbe:
           httpGet:
             path: /docs # FastAPI's docs endpoint
