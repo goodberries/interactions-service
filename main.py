@@ -103,7 +103,7 @@ def update_feedback(interaction_id: str, feedback_update: FeedbackUpdate):
             return result
     raise HTTPException(status_code=404, detail="Interaction not found.")
 
-@app.patch("/interactions/{interaction_id}/processed", response_model=Interaction)
+@app.patch("/interactions/{interaction_id}/processed", response_model=Interaction) #test
 def mark_as_processed(interaction_id: str, processed_update: ProcessedUpdate):
     """Marks an interaction as processed for training."""
     query = (
