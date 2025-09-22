@@ -3,8 +3,6 @@ name: CI for Interactions Service
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'interactions-service/**'
 
 jobs:
   build-and-deploy:
